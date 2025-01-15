@@ -179,7 +179,7 @@
                 success: function(data) {
                     if(data.status == 'success'){
                         if('data' in data)
-                            alert("Лид успешно добавлен. ID: " + toString(data.data));
+                            alert("Лид успешно добавлен. ID: " + data.data.toString());
                         else
                             alert('Лид успешно добавлен');
                         $('#order_form :input').val('');
